@@ -1,0 +1,200 @@
+.primaryColor-letterSpacing, .about-us-info .values-item .values-option, .header-container .navbar .brand-title {
+  color: #00445C;
+  letter-spacing: 0.7px;
+}
+
+.secoundColor-letterSpacing, .our-traning .project-manage-title {
+  color: #F87021;
+  letter-spacing: 0.7px;
+}
+
+.header-container .navbar {
+  position: fixed;
+  top: 0;
+  max-height: 85px;
+  width: 100%;
+  background-image: linear-gradient(148deg, #fff 33%, #ff8945 35%, #F87021 36%);
+  z-index: 999;
+}
+.header-container .navbar .brand-title {
+  font-weight: 500;
+}
+.header-container .navbar .nav-link {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  color: #EFEFEF;
+  border-radius: 30px;
+  padding: 7px 15px;
+  margin-right: 5px;
+}
+.header-container .navbar .nav-link:hover {
+  color: #EFEFEF;
+  background-color: #FF863F;
+}
+.header-container .navbar .nav-link:focus {
+  color: #EFEFEF;
+  box-shadow: none;
+  outline: 0;
+}
+.header-container .navbar .active-link {
+  background-color: #FF863F;
+}
+.header-container .navbar .navbar-collapse {
+  position: relative;
+  z-index: 111;
+}
+@media screen and (max-width: 991.8px) {
+  .header-container .navbar .navbar-collapse {
+    background-color: #00445C;
+    padding: 5px 10px;
+  }
+}
+
+.try-not-to-become {
+  position: relative;
+  height: 190px;
+  max-height: 200px;
+  margin-top: 85px;
+  background-image: url("../img/slider.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.try-not-to-become .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #062152c2;
+  z-index: 9999;
+}
+.try-not-to-become .overlay .try-not-to-become-content {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #EFEFEF;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+@media screen and (max-width: 456.7px) {
+  .try-not-to-become .overlay .try-not-to-become-content {
+    font-size: 18px;
+  }
+}
+.try-not-to-become .overlay .try-not-to-become-content .color-orange {
+  color: #F87021;
+}
+
+.about-us-info {
+  background-color: #EFEFEF;
+  padding: 60px 0;
+}
+.about-us-info .about-us-info-card {
+  border-radius: 20px;
+}
+@media screen and (max-width: 991.9px) {
+  .about-us-info .about-us-info-card {
+    margin: 50px 0;
+  }
+}
+.about-us-info .about-us-info-card .about-us-img {
+  margin-top: -60px;
+}
+.about-us-info .about-us-info-heading {
+  color: #00445C;
+  letter-spacing: 0.7px;
+}
+.about-us-info .about-us-info-desc {
+  color: #00445C;
+  letter-spacing: 0.7px;
+  line-height: 1.7;
+  max-height: 135px;
+}
+.about-us-info .btn-read-more {
+  background-color: #F87021;
+  padding: 6px 20px;
+  color: #FFF;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-bottom: -48px;
+}
+.about-us-info .btn-read-more:hover {
+  background-color: #FF863F;
+  color: #EFEFEF;
+}
+.about-us-info .btn-read-more:focus {
+  box-shadow: none;
+}
+.about-us-info .values-item {
+  max-height: 135px;
+}
+.about-us-info .values-item .values-option {
+  line-height: 1.7;
+}
+
+.our-traning .our-traning-heading .our-traning-title {
+  color: #00445C;
+  letter-spacing: 0.7px;
+}
+.our-traning .our-traning-heading .our-traning-title .color-orange {
+  color: #F87021;
+}
+.our-traning .our-traning-heading .our-traning-desc {
+  color: #00445C;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 15px 100px;
+  padding: 5px 0;
+  letter-spacing: 0.7px;
+  border: 1px solid #EFEFEF;
+}
+.our-traning .our-traning-heading .our-traning-desc .color-orange {
+  color: #F87021;
+}
+@media screen and (max-width: 768.9px) {
+  .our-traning .our-traning-heading .our-traning-desc {
+    margin: 15px 0;
+  }
+}
+.our-traning .project-manage-desc {
+  color: #00445C;
+  letter-spacing: 0.7px;
+}
+
+.map .map-location-img {
+  background-color: #00445C;
+  margin: 0 auto -33px;
+  width: 80px;
+  height: 80px;
+  line-height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  border: 6px solid #fff;
+  z-index: 1;
+  position: relative;
+}
+
+.footer-container {
+  background-color: #00445C;
+}
+.footer-container .copy-right {
+  color: #EFEFEF;
+  letter-spacing: 0.7px;
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  .footer-container .copy-right {
+    font-size: 14px;
+    margin-right: 10px;
+    text-align: center;
+  }
+}
+
+.space-betwen-sections {
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,196 @@
+.header-container {
+    .navbar {
+        position: fixed;
+        top: 0;
+        max-height: 85px;
+        width: 100%;
+        background-image: linear-gradient( 148deg, #fff 33%, #ff8945 35%, #F87021 36%);
+        z-index: 999;
+        .brand-title {
+            font-weight: $font-bold;
+            @extend .primaryColor-letterSpacing;
+        }
+        .nav-link {
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: $letter-spacing;
+            color: $gray-color;
+            border-radius: 30px;
+            padding: 7px 15px;
+            margin-right: 5px;
+            &:hover {
+                color: $gray-color;
+                background-color: $hover-color;
+            }
+            &:focus {
+                color: $gray-color;
+                box-shadow: none;
+                outline: 0;
+            }
+        }
+        .active-link {
+            background-color: $hover-color;
+        }
+        .navbar-collapse {
+            position: relative;
+            z-index: 111;
+            @media screen and(max-width: 991.8px) {
+                background-color: $primary-color;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+
+//start div try-not-to-become
+.try-not-to-become {
+    position: relative;
+    height: 190px;
+    max-height: 200px;
+    margin-top: 85px;
+    background-image: url("../img/slider.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #062152c2;
+        z-index: 9999;
+        .try-not-to-become-content {
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: $gray-color;
+            letter-spacing: $letter-spacing;
+            text-align: center;
+            @media screen and (max-width: 456.7px) {
+                font-size: 18px;
+            }
+            .color-orange {
+                color: $secound-color
+            }
+        }
+    }
+}
+
+// start section about-us-info
+.about-us-info {
+    background-color: $gray-color;
+    padding: 60px 0;
+    .about-us-info-card {
+        border-radius: 20px;
+        @media screen and (max-width: 991.9px) {
+            margin: 50px 0;
+        }
+        .about-us-img {
+            margin-top: -60px
+        }
+    }
+    .about-us-info-heading {
+        color: $primary-color;
+        letter-spacing: $letter-spacing;
+    }
+    .about-us-info-desc {
+        color: $primary-color;
+        letter-spacing: $letter-spacing;
+        line-height: 1.7;
+        max-height: 135px;
+    }
+    .btn-read-more {
+        background-color: $secound-color;
+        padding: 6px 20px;
+        color: #FFF;
+        font-weight: $font-bold;
+        border-radius: 20px;
+        margin-bottom: -48px;
+        &:hover {
+            background-color: $hover-color;
+            color: $gray-color
+        }
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .values-item {
+        max-height: 135px;
+        .values-option {
+            line-height: 1.7;
+            @extend .primaryColor-letterSpacing;
+        }
+    }
+}
+
+// start section our-traning
+.our-traning {
+    .our-traning-heading {
+        .our-traning-title {
+            color: $primary-color;
+            letter-spacing: $letter-spacing;
+            .color-orange {
+                color: $secound-color;
+            }
+        }
+        .our-traning-desc {
+            color: #00445C;
+            font-size: 15px;
+            font-weight: 500;
+            margin: 15px 100px;
+            padding: 5px 0;
+            letter-spacing: $letter-spacing;
+            border: 1px solid $gray-color;
+            .color-orange {
+                color: $secound-color
+            }
+            @media screen and (max-width:768.9px) {
+                margin: 15px 0
+            }
+        }
+    }
+    .project-manage-title {
+        @extend .secoundColor-letterSpacing
+    }
+    .project-manage-desc {
+        color: $primary-color;
+        letter-spacing: $letter-spacing;
+    }
+}
+
+// start section map
+.map {
+    .map-location-img {
+        background-color: $primary-color;
+        margin: 0 auto -33px;
+        width: 80px;
+        height: 80px;
+        line-height: 70px;
+        border-radius: 50%;
+        text-align: center;
+        border: 6px solid #fff;
+        z-index: 1;
+        position: relative;
+    }
+}
+
+// start footer-container
+.footer-container {
+    background-color: $primary-color;
+    .copy-right {
+        color: $gray-color;
+        letter-spacing: $letter-spacing;
+        font-size: 15px;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            margin-right: 10px;
+            text-align: center;
+        }
+    }
+}
+
+.space-betwen-sections {
+    margin-bottom: 50px;
+}
