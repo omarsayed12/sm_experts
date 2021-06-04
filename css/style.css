@@ -102,6 +102,8 @@
 }
 .about-us-info .about-us-info-card .about-us-img {
   margin-top: -60px;
+  border: 5px solid #EFEFEF;
+  border-radius: 13px;
 }
 .about-us-info .about-us-info-heading {
   color: #00445C;
