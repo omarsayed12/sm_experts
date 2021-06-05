@@ -16,8 +16,23 @@
   background-image: linear-gradient(148deg, #fff 33%, #ff8945 35%, #F87021 36%);
   z-index: 999;
 }
+@media screen and (max-width: 425.9px) {
+  .header-container .navbar {
+    max-height: 75px;
+  }
+}
+@media screen and (max-width: 425.9px) {
+  .header-container .navbar .nav-logo {
+    max-width: 70px;
+  }
+}
 .header-container .navbar .brand-title {
   font-weight: 500;
+}
+@media screen and (max-width: 425.7px) {
+  .header-container .navbar .brand-title {
+    font-size: 14px;
+  }
 }
 .header-container .navbar .nav-link {
   font-size: 17px;
@@ -37,15 +52,26 @@
   box-shadow: none;
   outline: 0;
 }
-.header-container .navbar .active-link {
+@media screen and (max-width: 991.9px) {
+  .header-container .navbar .nav-link {
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+}
+.header-container .navbar .navbar-toggler {
+  border: 0;
+}
+.header-container .active-link {
   background-color: #FF863F;
 }
-.header-container .navbar .navbar-collapse {
+.header-container .navbar-collapse {
   position: relative;
   z-index: 111;
 }
 @media screen and (max-width: 991.8px) {
-  .header-container .navbar .navbar-collapse {
+  .header-container .navbar-collapse {
     background-color: #00445C;
     padding: 5px 10px;
   }
@@ -61,6 +87,11 @@
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
+}
+@media screen and (max-width: 430.9px) {
+  .try-not-to-become {
+    margin-top: 70px;
+  }
 }
 .try-not-to-become .overlay {
   position: absolute;
@@ -90,7 +121,7 @@
 
 .about-us-info {
   background-color: #EFEFEF;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 .about-us-info .about-us-info-card {
   border-radius: 20px;
@@ -113,7 +144,7 @@
   color: #00445C;
   letter-spacing: 0.7px;
   line-height: 1.7;
-  max-height: 135px;
+  min-height: 170px;
 }
 .about-us-info .btn-read-more {
   background-color: #F87021;
@@ -131,7 +162,7 @@
   box-shadow: none;
 }
 .about-us-info .values-item {
-  max-height: 135px;
+  min-height: 170px;
 }
 .about-us-info .values-item .values-option {
   line-height: 1.7;
@@ -159,6 +190,11 @@
 @media screen and (max-width: 768.9px) {
   .our-traning .our-traning-heading .our-traning-desc {
     margin: 15px 0;
+  }
+}
+@media screen and (max-width: 375.9px) {
+  .our-traning .project-manage-title {
+    font-size: 17px;
   }
 }
 .our-traning .project-manage-desc {
@@ -189,9 +225,8 @@
 }
 @media screen and (max-width: 768px) {
   .footer-container .copy-right {
-    font-size: 14px;
-    margin-right: 10px;
-    text-align: center;
+    font-size: 13px;
+    margin-left: 10px;
   }
 }
 

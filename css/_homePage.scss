@@ -6,9 +6,20 @@
         width: 100%;
         background-image: linear-gradient( 148deg, #fff 33%, #ff8945 35%, #F87021 36%);
         z-index: 999;
+        @media screen and (max-width: 425.9px) {
+            max-height: 75px;
+        }
+        .nav-logo {
+            @media screen and (max-width: 425.9px) {
+                max-width: 70px;
+            }
+        }
         .brand-title {
             font-weight: $font-bold;
             @extend .primaryColor-letterSpacing;
+            @media screen and (max-width: 425.7px) {
+                font-size: 14px;
+            }
         }
         .nav-link {
             font-size: 17px;
@@ -27,17 +38,26 @@
                 box-shadow: none;
                 outline: 0;
             }
-        }
-        .active-link {
-            background-color: $hover-color;
-        }
-        .navbar-collapse {
-            position: relative;
-            z-index: 111;
-            @media screen and(max-width: 991.8px) {
-                background-color: $primary-color;
-                padding: 5px 10px;
+            @media screen and (max-width:991.9px) {
+                border-radius: 5px;
+                margin: 10px;
+                padding: 5px 15px;
+                font-size: 15px;
             }
+        }
+        .navbar-toggler {
+            border: 0;
+        }
+    }
+    .active-link {
+        background-color: $hover-color
+    }
+    .navbar-collapse {
+        position: relative;
+        z-index: 111;
+        @media screen and(max-width: 991.8px) {
+            background-color: $primary-color;
+            padding: 5px 10px;
         }
     }
 }
@@ -53,6 +73,9 @@
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;
+    @media screen and (max-width: 430.9px) {
+        margin-top: 70px;
+    }
     .overlay {
         position: absolute;
         top: 0;
@@ -81,7 +104,7 @@
 // start section about-us-info
 .about-us-info {
     background-color: $gray-color;
-    padding: 60px 0;
+    padding: 20px 0;
     .about-us-info-card {
         border-radius: 20px;
         @media screen and (max-width: 991.9px) {
@@ -101,7 +124,7 @@
         color: $primary-color;
         letter-spacing: $letter-spacing;
         line-height: 1.7;
-        max-height: 135px;
+        min-height: 170px;
     }
     .btn-read-more {
         background-color: $secound-color;
@@ -119,7 +142,7 @@
         }
     }
     .values-item {
-        max-height: 135px;
+        min-height: 170px;
         .values-option {
             line-height: 1.7;
             @extend .primaryColor-letterSpacing;
@@ -154,7 +177,10 @@
         }
     }
     .project-manage-title {
-        @extend .secoundColor-letterSpacing
+        @extend .secoundColor-letterSpacing;
+        @media screen and (max-width: 375.9px) {
+            font-size: 17px;
+        }
     }
     .project-manage-desc {
         color: $primary-color;
@@ -186,9 +212,8 @@
         letter-spacing: $letter-spacing;
         font-size: 15px;
         @media screen and (max-width: 768px) {
-            font-size: 14px;
-            margin-right: 10px;
-            text-align: center;
+            font-size: 13px;
+            margin-left: 10px;
         }
     }
 }
