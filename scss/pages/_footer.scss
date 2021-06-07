@@ -1,0 +1,17 @@
+// start footer-container
+.footer-container {
+    background-color: $primary-color;
+    .copy-right {
+        color: $gray-color;
+        letter-spacing: $letter-spacing;
+        font-size: 18px;
+        @media screen and (max-width: 768px) {
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.space-betwen-sections {
+    margin-bottom: 50px;
+}

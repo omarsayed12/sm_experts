@@ -1,76 +1,10 @@
-.header-container {
-    .navbar {
-        position: fixed;
-        top: 0;
-        max-height: 85px;
-        width: 100%;
-        background-image: linear-gradient( 148deg, #fff 33%, #ff8945 35%, #F87021 36%);
-        z-index: 999;
-        @media screen and (max-width: 425.9px) {
-            max-height: 75px;
-        }
-        .nav-logo {
-            @media screen and (max-width: 425.9px) {
-                max-width: 70px;
-            }
-        }
-        .brand-title {
-            font-weight: $font-bold;
-            @extend .primaryColor-letterSpacing;
-            @media screen and (max-width: 425.7px) {
-                font-size: 14px;
-            }
-        }
-        .nav-link {
-            font-size: 17px;
-            font-weight: 500;
-            letter-spacing: $letter-spacing;
-            color: $gray-color;
-            border-radius: 30px;
-            padding: 7px 15px;
-            margin-right: 5px;
-            &:hover {
-                color: $gray-color;
-                background-color: $hover-color;
-            }
-            &:focus {
-                color: $gray-color;
-                box-shadow: none;
-                outline: 0;
-            }
-            @media screen and (max-width:991.9px) {
-                border-radius: 5px;
-                margin: 10px;
-                padding: 5px 15px;
-                font-size: 15px;
-            }
-        }
-        .navbar-toggler {
-            border: 0;
-        }
-    }
-    .active-link {
-        background-color: $hover-color
-    }
-    .navbar-collapse {
-        position: relative;
-        z-index: 111;
-        @media screen and(max-width: 991.8px) {
-            background-color: $primary-color;
-            padding: 5px 10px;
-        }
-    }
-}
-
 //start div try-not-to-become
 .try-not-to-become {
     position: relative;
     height: 190px;
     max-height: 200px;
     margin-top: 85px;
-    background-image: url("../img/slider.jpg");
-    background-position: center;
-    background-size: cover;
+    background: center / cover no-repeat url("../img/slider.jpg");
     background-attachment: fixed;
     z-index: 1;
     @media screen and (max-width: 430.9px) {
@@ -127,13 +61,29 @@
         min-height: 170px;
     }
     .btn-read-more {
-        background-color: $secound-color;
+        position: relative;
         padding: 6px 20px;
-        color: #FFF;
+        margin-bottom: -50px;
         font-weight: $font-bold;
-        border-radius: 20px;
-        margin-bottom: -48px;
-        &:hover {
+        background-color: $secound-color;
+        color: #FFF;
+        border-radius: 7px;
+        z-index: 99999;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-radius: 7px;
+            background-color: $hover-color;
+            @include transition(.3s);
+            z-index: -9999;
+        }
+        &:hover::before {
+            height: 100%;
             background-color: $hover-color;
             color: $gray-color
         }
@@ -176,6 +126,35 @@
             }
         }
     }
+    .project-logo {
+        min-width: 128px;
+        min-height: 128px;
+        @include transition(.6s);
+    }
+    .project-mange-logo {
+        background: center / contain no-repeat url("../img/ProjectManagement1.jpg");
+        &:hover {
+            background: center / contain no-repeat url("../img/ProjectManagement2.png");
+        }
+    }
+    .business-logo {
+        background: center / contain no-repeat url("../img/Business.png");
+        &:hover {
+            background: center / contain no-repeat url("../img/Business1.jpg");
+        }
+    }
+    .manage-skills-logo {
+        background: center / contain no-repeat url("../img/ManagementSkills.jpg");
+        &:hover {
+            background: center / contain no-repeat url("../img/Management\ Skills2.png");
+        }
+    }
+    .customize-logo {
+        background: center / contain no-repeat url("../img/customized.jpg");
+        &:hover {
+            background: center / contain no-repeat url("../img/customized2.png");
+        }
+    }
     .project-manage-title {
         @extend .secoundColor-letterSpacing;
         @media screen and (max-width: 375.9px) {
@@ -202,22 +181,4 @@
         z-index: 1;
         position: relative;
     }
-}
-
-// start footer-container
-.footer-container {
-    background-color: $primary-color;
-    .copy-right {
-        color: $gray-color;
-        letter-spacing: $letter-spacing;
-        font-size: 15px;
-        @media screen and (max-width: 768px) {
-            font-size: 13px;
-            margin-left: 10px;
-        }
-    }
-}
-
-.space-betwen-sections {
-    margin-bottom: 50px;
 }

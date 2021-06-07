@@ -1,11 +1,17 @@
-.primaryColor-letterSpacing, .about-us-info .values-item .values-option, .header-container .navbar .brand-title {
+.primaryColor-letterSpacing, .training .training-header .training-header-title, .about-us-info .values-item .values-option, .header-container .navbar .brand-title {
   color: #00445C;
   letter-spacing: 0.7px;
 }
 
-.secoundColor-letterSpacing, .our-traning .project-manage-title {
+.secoundColor-letterSpacing, .training .training-contnet .list-cousre-title, .our-traning .project-manage-title {
   color: #F87021;
   letter-spacing: 0.7px;
+}
+
+.articale-desc, .training .training-contnet .traing-desc {
+  letter-spacing: 0.7px;
+  color: #00445C;
+  line-height: 1.7;
 }
 
 .header-container .navbar {
@@ -42,6 +48,11 @@
   border-radius: 30px;
   padding: 7px 15px;
   margin-right: 5px;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 .header-container .navbar .nav-link:hover {
   color: #EFEFEF;
@@ -82,9 +93,7 @@
   height: 190px;
   max-height: 200px;
   margin-top: 85px;
-  background-image: url("../img/slider.jpg");
-  background-position: center;
-  background-size: cover;
+  background: center/cover no-repeat url("../img/slider.jpg");
   background-attachment: fixed;
   z-index: 1;
 }
@@ -147,14 +156,34 @@
   min-height: 170px;
 }
 .about-us-info .btn-read-more {
-  background-color: #F87021;
+  position: relative;
   padding: 6px 20px;
-  color: #FFF;
+  margin-bottom: -50px;
   font-weight: 500;
-  border-radius: 20px;
-  margin-bottom: -48px;
+  background-color: #F87021;
+  color: #FFF;
+  border-radius: 7px;
+  z-index: 99999;
 }
-.about-us-info .btn-read-more:hover {
+.about-us-info .btn-read-more::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-radius: 7px;
+  background-color: #FF863F;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  z-index: -9999;
+}
+.about-us-info .btn-read-more:hover::before {
+  height: 100%;
   background-color: #FF863F;
   color: #EFEFEF;
 }
@@ -192,6 +221,39 @@
     margin: 15px 0;
   }
 }
+.our-traning .project-logo {
+  min-width: 128px;
+  min-height: 128px;
+  -webkit-transition: 0.6s ease-in;
+  -moz-transition: 0.6s ease-in;
+  -ms-transition: 0.6s ease-in;
+  -o-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
+}
+.our-traning .project-mange-logo {
+  background: center/contain no-repeat url("../img/ProjectManagement1.jpg");
+}
+.our-traning .project-mange-logo:hover {
+  background: center/contain no-repeat url("../img/ProjectManagement2.png");
+}
+.our-traning .business-logo {
+  background: center/contain no-repeat url("../img/Business.png");
+}
+.our-traning .business-logo:hover {
+  background: center/contain no-repeat url("../img/Business1.jpg");
+}
+.our-traning .manage-skills-logo {
+  background: center/contain no-repeat url("../img/ManagementSkills.jpg");
+}
+.our-traning .manage-skills-logo:hover {
+  background: center/contain no-repeat url("../img/Management Skills2.png");
+}
+.our-traning .customize-logo {
+  background: center/contain no-repeat url("../img/customized.jpg");
+}
+.our-traning .customize-logo:hover {
+  background: center/contain no-repeat url("../img/customized2.png");
+}
 @media screen and (max-width: 375.9px) {
   .our-traning .project-manage-title {
     font-size: 17px;
@@ -215,17 +277,121 @@
   position: relative;
 }
 
+.header-container {
+  margin-bottom: 86px;
+}
+
+.services-proTrain {
+  height: 150px;
+  background: top/cover no-repeat url("../img/slider3b.png");
+}
+.services-proTrain .traing-logo {
+  margin-top: 75px;
+}
+@media screen and (max-width: 425px) {
+  .services-proTrain .traing-logo {
+    width: 120px;
+    margin-top: 92px;
+  }
+}
+.services-proTrain .breadcrumb {
+  padding-top: 40px;
+  flex-wrap: nowrap;
+}
+.services-proTrain .breadcrumb .breadcrumb-item::before {
+  color: #EFEFEF;
+}
+.services-proTrain .breadcrumb .breadcrumb-item .breadcrumb-link {
+  color: #EFEFEF;
+  letter-spacing: 0.7px;
+  font-size: 17px;
+}
+.services-proTrain .breadcrumb .breadcrumb-item .breadcrumb-link::hover, .services-proTrain .breadcrumb .breadcrumb-item .breadcrumb-link:focus {
+  color: #EFEFEF;
+}
+@media screen and (max-width: 425px) {
+  .services-proTrain .breadcrumb .breadcrumb-item .breadcrumb-link {
+    font-size: 13px;
+  }
+}
+
+.prof-training {
+  padding: 100px 0;
+  background-color: #EFEFEF;
+}
+.prof-training .prof-training-header-title {
+  color: #00445C;
+  font-size: 35px;
+  font-weight: 700;
+}
+.prof-training .prof-training-Desc .orange-color {
+  color: #F87021;
+  font-weight: 500;
+}
+
+.training .training-header {
+  justify-content: space-evenly;
+  margin-top: -27.1px;
+}
+.training .training-header .training-header-title {
+  background-color: #EFEFEF;
+  padding: 10px 15px;
+  border: 4px solid #FFF;
+  font-size: 16px;
+  max-width: 272px;
+  width: 272px;
+  text-align: center;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.training .training-header .training-header-title:hover {
+  background-color: #FFF;
+  border: 4px solid #EFEFEF;
+  color: #F87021;
+}
+.training .training-contnet {
+  margin-top: 75px;
+}
+.training .project-manage-option {
+  position: relative;
+  padding: 7px 0;
+  margin-right: 5px;
+  color: #00445C;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.training .project-manage-option:hover {
+  color: #F87021;
+}
+.training .project-manage-option::before {
+  content: "";
+  top: 12px;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  background: center/cover no-repeat url("../img/right-arrow.png");
+  position: absolute;
+}
+
 .footer-container {
   background-color: #00445C;
 }
 .footer-container .copy-right {
   color: #EFEFEF;
   letter-spacing: 0.7px;
-  font-size: 15px;
+  font-size: 18px;
 }
 @media screen and (max-width: 768px) {
   .footer-container .copy-right {
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 10px;
   }
 }

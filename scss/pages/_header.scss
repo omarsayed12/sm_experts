@@ -1,0 +1,64 @@
+.header-container {
+    .navbar {
+        position: fixed;
+        top: 0;
+        max-height: 85px;
+        width: 100%;
+        background-image: linear-gradient( 148deg, #fff 33%, #ff8945 35%, #F87021 36%);
+        z-index: 999;
+        @media screen and (max-width: 425.9px) {
+            max-height: 75px;
+        }
+        .nav-logo {
+            @media screen and (max-width: 425.9px) {
+                max-width: 70px;
+            }
+        }
+        .brand-title {
+            font-weight: $font-bold;
+            @extend .primaryColor-letterSpacing;
+            @media screen and (max-width: 425.7px) {
+                font-size: 14px;
+            }
+        }
+        .nav-link {
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: $letter-spacing;
+            color: $gray-color;
+            border-radius: 30px;
+            padding: 7px 15px;
+            margin-right: 5px;
+            @include transition(.5s);
+            &:hover {
+                color: $gray-color;
+                background-color: $hover-color;
+            }
+            &:focus {
+                color: $gray-color;
+                box-shadow: none;
+                outline: 0;
+            }
+            @media screen and (max-width:991.9px) {
+                border-radius: 5px;
+                margin: 10px;
+                padding: 5px 15px;
+                font-size: 15px;
+            }
+        }
+        .navbar-toggler {
+            border: 0;
+        }
+    }
+    .active-link {
+        background-color: $hover-color
+    }
+    .navbar-collapse {
+        position: relative;
+        z-index: 111;
+        @media screen and(max-width: 991.8px) {
+            background-color: $primary-color;
+            padding: 5px 10px;
+        }
+    }
+}
