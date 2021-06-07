@@ -3,7 +3,7 @@
 }
 
 // start div services-proTrain
-.services-proTrain {
+.services-pro-train {
     height: 150px;
     background: top / cover no-repeat url("../img/slider3b.png");
     .traing-logo {
@@ -16,12 +16,10 @@
     .breadcrumb {
         padding-top: 40px;
         flex-wrap: nowrap;
-        @media screen and (max-width: 425px) {}
         .breadcrumb-item {
             &::before {
                 color: $gray-color;
             }
-            @media screen and (max-width: 425px) {}
             .breadcrumb-link {
                 color: $gray-color;
                 letter-spacing: $letter-spacing;
@@ -46,7 +44,7 @@
         font-size: 35px;
         font-weight: 700;
     }
-    .prof-training-Desc {
+    .prof-training-desc {
         // @extend .article-desc;
         .orange-color {
             color: $secound-color;
@@ -97,6 +95,9 @@
         &:hover {
             color: $secound-color;
         }
+        @media screen and (max-width: 425px) {
+            font-size: 13px;
+        }
     }
     .project-manage-option::before {
         content: "";
@@ -104,7 +105,7 @@
         left: -10px;
         width: 10px;
         height: 10px;
-        background: center / cover no-repeat url("../img/right-arrow.png");
         position: absolute;
+        background: center / cover no-repeat url("../img/right-arrow.png");
     }
 }

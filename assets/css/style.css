@@ -281,36 +281,36 @@
   margin-bottom: 86px;
 }
 
-.services-proTrain {
+.services-pro-train {
   height: 150px;
   background: top/cover no-repeat url("../img/slider3b.png");
 }
-.services-proTrain .traing-logo {
+.services-pro-train .traing-logo {
   margin-top: 75px;
 }
 @media screen and (max-width: 425px) {
-  .services-proTrain .traing-logo {
+  .services-pro-train .traing-logo {
     width: 120px;
     margin-top: 92px;
   }
 }
-.services-proTrain .breadcrumb {
+.services-pro-train .breadcrumb {
   padding-top: 40px;
   flex-wrap: nowrap;
 }
-.services-proTrain .breadcrumb .breadcrumb-item::before {
+.services-pro-train .breadcrumb .breadcrumb-item::before {
   color: #EFEFEF;
 }
-.services-proTrain .breadcrumb .breadcrumb-item .breadcrumb-link {
+.services-pro-train .breadcrumb .breadcrumb-item .breadcrumb-link {
   color: #EFEFEF;
   letter-spacing: 0.7px;
   font-size: 17px;
 }
-.services-proTrain .breadcrumb .breadcrumb-item .breadcrumb-link::hover, .services-proTrain .breadcrumb .breadcrumb-item .breadcrumb-link:focus {
+.services-pro-train .breadcrumb .breadcrumb-item .breadcrumb-link::hover, .services-pro-train .breadcrumb .breadcrumb-item .breadcrumb-link:focus {
   color: #EFEFEF;
 }
 @media screen and (max-width: 425px) {
-  .services-proTrain .breadcrumb .breadcrumb-item .breadcrumb-link {
+  .services-pro-train .breadcrumb .breadcrumb-item .breadcrumb-link {
     font-size: 13px;
   }
 }
@@ -324,7 +324,7 @@
   font-size: 35px;
   font-weight: 700;
 }
-.prof-training .prof-training-Desc .orange-color {
+.prof-training .prof-training-desc .orange-color {
   color: #F87021;
   font-weight: 500;
 }
@@ -371,14 +371,19 @@
 .training .project-manage-option:hover {
   color: #F87021;
 }
+@media screen and (max-width: 425px) {
+  .training .project-manage-option {
+    font-size: 13px;
+  }
+}
 .training .project-manage-option::before {
   content: "";
   top: 12px;
   left: -10px;
   width: 10px;
   height: 10px;
-  background: center/cover no-repeat url("../img/right-arrow.png");
   position: absolute;
+  background: center/cover no-repeat url("../img/right-arrow.png");
 }
 
 .footer-container {
